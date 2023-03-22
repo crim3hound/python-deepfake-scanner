@@ -1,4 +1,4 @@
-import os, sys, glob, time, json
+import os, sys, glob, time, json, warnings
 from collections import defaultdict
 import cv2
 import torch
@@ -299,5 +299,5 @@ def main():
 
 
 if __name__ == '__main__':
-	np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
+	warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 	main()
